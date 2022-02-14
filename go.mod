@@ -1,3 +1,3 @@
-module golang-book
+module basics
 
 go 1.17
