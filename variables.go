@@ -10,6 +10,10 @@ func main() {
 	dogsAge := 1
 	dogsHight := 0.33
 
+	// constant identifires
+	const greet string = "Hello John"
+	//greet = "Hello Jane"	// cannot assign to greet (declared const)
+
 	fmt.Printf("%v, %T \n", dogsName, dogsName)
 	fmt.Printf("%v, %T \n", dogsAge, dogsAge)
 	fmt.Printf("%v, %T \n", dogsHight, dogsHight)
