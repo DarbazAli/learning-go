@@ -9,6 +9,9 @@ func main() {
 	x := []float64{98, 93, 77, 82, 83}
 
 	fmt.Println(average(x))
+
+	a, b := f()
+	fmt.Println(a, b)
 }
 
 // calculate average value func
@@ -21,4 +24,9 @@ func average(xs []float64) float64 {
 	}
 
 	return total / float64(len(xs))
+}
+
+// function with multiple returns
+func f() (int, int) {
+	return 5, 10
 }
