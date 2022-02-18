@@ -3,41 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	var arr [5]int
-	arr[4] = 100
+	var x [5]int
+	x[0] = 1
+	x[1] = 2
+	x[2] = 3
+	x[3] = 4
+	x[4] = 5
 
-	fmt.Println(arr)
-
-	var x [5]float64
-	x[0] = 98
-	x[1] = 93
-	x[2] = 77
-	x[3] = 82
-	x[4] = 83
-
-	var total float64 = 0
-	for i := 0; i < len(x); i++ {
-		total += x[i]
-	}
-
-	fmt.Println(total / float64(len(x)))
-
-	// using range
-	var total2 float64 = 0
-	for _, value := range x {
-		total2 += value
-	}
-
-	fmt.Println(total2 / float64(len(x)))
-
-	shortSyntax()
-}
-
-// short syntax of array
-func shortSyntax() {
-	x := [5]float64{98, 93, 77, 82, 83}
-
-	for _, value := range x {
-		fmt.Println(value)
-	}
+	fmt.Println(x)
 }
