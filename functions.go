@@ -3,15 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	//
-	result := div(5, 2)
-	fmt.Println(result)
+	// main function begins program execution
+	fmt.Println("Hello world")
+
+	x := []float64{98, 93, 77, 82, 83}
+
+	fmt.Println(average(x))
 }
 
-func div(numerator, demoniator int) int {
-	if demoniator == 0 {
-		return 0
+// calculate average value func
+func average(xs []float64) float64 {
+
+	total := 0.0
+
+	for _, value := range xs {
+		total += value
 	}
 
-	return numerator / demoniator
+	return total / float64(len(xs))
 }
