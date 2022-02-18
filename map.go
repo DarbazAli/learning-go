@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	x := make(map[string]int)
 	x["One"] = 1
-	x["Tow"] = 2
+	x["Two"] = 2
 	x["Three"] = 3
 
 	fmt.Println(x, len(x))
@@ -14,4 +14,9 @@ func main() {
 	delete(x, "One")
 
 	fmt.Println(x)
+
+	// check for element
+	if item, ok := x["Two"]; ok {
+		fmt.Println(item, ok)
+	}
 }
