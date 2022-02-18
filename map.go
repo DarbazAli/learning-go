@@ -19,4 +19,18 @@ func main() {
 	if item, ok := x["Two"]; ok {
 		fmt.Println(item, ok)
 	}
+
+	chemicalElements()
+}
+
+func chemicalElements() {
+	elements := map[string]string{
+		"H":  "Hydrogen",
+		"He": "Helium",
+		"Li": "Lithium",
+		"Be": "Beryllium",
+		"B":  "Boron",
+	}
+
+	fmt.Println(elements)
 }
