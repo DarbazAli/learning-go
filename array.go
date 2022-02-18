@@ -18,4 +18,10 @@ func main() {
 	arr := [5]int{83, 92, 82, 32, 65}
 
 	fmt.Println(arr)
+
+	// traversing arrays
+	// Go has only on looping construct which is for loop
+	for i := 0; i < len(arr); i++ {
+		fmt.Println(i, arr[i])
+	}
 }
