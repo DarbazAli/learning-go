@@ -10,4 +10,8 @@ func main() {
 
 	fmt.Println(x, len(x))
 	fmt.Println(x["Three"])
+
+	delete(x, "One")
+
+	fmt.Println(x)
 }
