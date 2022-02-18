@@ -24,4 +24,22 @@ func main() {
 	for i := 0; i < len(arr); i++ {
 		fmt.Println(i, arr[i])
 	}
+
+	// array traversal with range
+	for _, value := range x {
+		fmt.Println(value)
+	}
+
+	getAverage()
+}
+
+func getAverage() {
+	grades := [5]float64{88, 89, 99, 77, 66}
+
+	var total float64 = 0
+	for _, value := range grades {
+		total += value
+	}
+
+	fmt.Println(total / float64(len(grades)))
 }
